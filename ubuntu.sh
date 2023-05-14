@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # 此脚本仅使用于Ubuntu，望大家周知
+sudo apt update
 
 # 安装Docker
 sudo apt install docker.io
@@ -149,4 +150,4 @@ sudo docker run -d -p $port1:$port1 --name v2ray --network bridge --restart=alwa
 
 echo "http_proxy=http://127.0.0.1:$port1/" | sudo tee -a /etc/environment
 echo "https_proxy=http://127.0.0.1:$port1/" | sudo tee -a /etc/environment
-echo "脚本执行完毕，请重启输入‘curl cip.cc’验证IP地址
+echo "脚本执行完毕，请重启输入'curl cip.cc'验证IP地址"
